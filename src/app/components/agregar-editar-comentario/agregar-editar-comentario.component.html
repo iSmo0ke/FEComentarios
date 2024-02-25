@@ -3,17 +3,26 @@
     <div class="mb-3">
         <label for="titulo" class="form-label">Titulo</label>
         <input formControlName="titulo" type="text" class="form-control" id="titulo">
+        <span *ngIf="agregarComentario.get('titulo')?.invalid && agregarComentario.get('titulo')?.touched " class="text-danger" autocomplete="off">
+            <strong>¡El titulo es requerido!</strong>
+        </span>
     </div>
     <div class="mb-3">
         <label for="creador" class="form-label">Creador</label>
         <input formControlName="creador" type="text" class="form-control" id="creador">
+        <span *ngIf="agregarComentario.get('creador')?.invalid && agregarComentario.get('creador')?.touched" class="text-danger" autocomplete="off">
+            <strong>¡El creador es requerido!</strong>
+        </span>
     </div>
     <div class="mb-3">
         <label for="texto" class="form-label">Comentario</label>
         <textarea formControlName="texto" class="form-control" id="texto" rows="8"></textarea>
+        <span *ngIf="agregarComentario.get('texto')?.invalid && agregarComentario.get('texto')?.touched" class="text-danger" autocomplete="off">
+            <strong>¡El comentario es requerido!</strong>
+        </span>
     </div>
 
-    <button type="submit" class="btn btn-primary float-end">Aceptar</button>
+    <button type="submit" [disabled]="agregarComentario.invalid" class="btn btn-primary float-end">Aceptar</button>
     <button type="button" routerLink="/" class="btn btn-secondary">Volver</button>
       
 </form>

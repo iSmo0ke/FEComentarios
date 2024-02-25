@@ -22,7 +22,7 @@ export class AgregarEditarComentarioComponent implements OnInit {
   }
 
   agregar(){
-    console.log(this.agregarComentario);
+    //console.log(this.agregarComentario);
 
     const comentario: Comentario={
       titulo: this.agregarComentario.get('titulo')?.value,
@@ -30,7 +30,7 @@ export class AgregarEditarComentarioComponent implements OnInit {
       texto: this.agregarComentario.get('texto')?.value,
       fechaCreacion: new Date
     }
-    console.log(comentario);
+    //console.log(comentario);
 
 
   }

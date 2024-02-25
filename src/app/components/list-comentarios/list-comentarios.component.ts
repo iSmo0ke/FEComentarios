@@ -11,25 +11,25 @@ export class ListComentariosComponent implements OnInit {
   listComentarios:Comentario[] = [
     {
     titulo: 'Angular', 
-    creador: 'Fernando', 
+    creador: 'Jesús', 
     fechaCreacion: new Date(), 
     texto: 'Framework para crear SPA', 
     },
     {
       titulo: 'React', 
-      creador: 'Maricela Maldonado', 
+      creador: 'Altamirano', 
       fechaCreacion: new Date(), 
       texto: 'Libreria para crear SPA', 
     },
     {
       titulo: 'Vue', 
-      creador: 'Octavio', 
+      creador: 'Carrillo', 
       fechaCreacion: new Date(), 
       texto: 'Framework progresivo para crear SPA', 
     },
     {
       titulo: 'Phyton', 
-      creador: 'Jesús', 
+      creador: '5°B', 
       fechaCreacion: new Date(), 
       texto: 'Lenguaje de programación', 
     }
